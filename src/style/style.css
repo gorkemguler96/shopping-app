@@ -1,0 +1,196 @@
+* {
+    font-family: "Comic Sans MS";
+}
+
+.img-size {
+    width: 229px;
+    height: 333px;
+    margin-right: auto;
+    margin-left: auto;
+}
+.card {
+ height: 511px;
+    text-align: center;
+    margin-bottom: 25px;
+}
+.card-title {
+    height: 50px;
+    padding-bottom: 5px;
+    border-bottom: 1px solid #eabf00;
+}
+ .yellow-btn:hover {
+     background: #eabf00;
+     color: black;
+ }
+ .yellow-btn{
+     width: 100%;
+     border-radius: 0px;
+     background: black;
+ }
+
+.sizes {
+    border-radius: 50px;
+    margin-left: 5px;
+}
+
+.baslik-sizes {
+    margin-left: 14px;
+}
+
+.size{
+    margin-left: 7px;
+    margin-top: 7px;
+    border-radius: 50%;
+    width: 35px;
+    height: 35px;
+    font-size: 9.5px;
+    background: black;
+}
+
+.size:hover{
+    background: #eabf00;
+}
+
+.size:active{
+    background: #6c757d;
+}
+
+.son{
+    padding-left: 9px;
+}
+
+.frst {
+    padding-left: 10px;
+}
+
+.navbar {
+    margin-bottom: 40px;
+    background: black;
+}
+
+.dropdown-toggle {
+    background: black;
+    color: white;
+    margin-top: 15px;
+    margin-left: 12px;
+    border-top-right-radius: 10px;
+}
+
+.badge {
+    margin-left: 3px;
+}
+
+.basket-card {
+    background: black;
+    height: 100%;
+    width: 400px;
+}
+
+.basketTitle {
+    height: 100px;
+    margin-top: 10px;
+}
+
+.basket-item {
+    max-width: 370px;
+    max-height: 160px;
+    color: white;
+    background: black;
+    font-size: 12px;
+}
+
+.basket-img-size {
+    max-height: 120px;
+    max-width: 80px;
+    margin-top: 3px;
+}
+
+.TitleBasket{
+    font-size: 10px;
+}
+
+.text-border {
+    padding-bottom: 10px;
+    text-align: left;
+    color: #6c757d;
+}
+
+.bordr-bottom {
+    border-bottom: 2px solid #eabf00;
+}
+
+.btn-settings {
+    width: 20%;
+    margin-left: auto;
+    color: white;
+    background: black;
+    border-left: 1px solid white;
+    border-bottom: 1px solid white;
+}
+
+.btn-settings:hover {
+    color:#eabf00 ;
+    border-left: 1px solid #eabf00;
+    border-bottom: 1px solid #eabf00;
+}
+
+.iconS {
+    float: right;
+    font-size: 18px;
+}
+.iconS-plus:hover{
+    color: #eabf00;
+}
+.iconS-minus:hover{
+    color: red;
+}
+.cardClosed {
+    display: flex;
+    justify-content: end;
+    font-size: 18px;
+}
+
+.cardClosed:hover{
+    color: red;
+}
+
+.priceConfig{
+    color: red;
+    padding-left: 15px;
+}
+
+.basketZindex{
+    z-index: 2;
+    display: inline-block;
+    margin-bottom: px;
+}
+
+.allPage {
+    z-index: 1;
+}
+
+.subTotal {
+    height: 100px;
+    padding: 10px;
+}
+
+.toplam{
+    color: #6c757d;
+    display: flex;
+}
+
+.fiyat {
+    margin-left: auto;
+    color: #eabf00;
+}
+
+.btn-sttng {
+    width: 100%;
+    margin-top: 19px;
+    background: #343a40;
+}
+
+.btn-sttng:hover{
+    background: #eabf00;
+    color: black;
+}

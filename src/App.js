@@ -312,6 +312,7 @@ function App() {
 
 
 
+
   useEffect(()=>{
     const initialValue = 0
     const toplam =  selectBasketCount.reduce((previousValue,currentValue)=>previousValue +(currentValue.amount* currentValue.price),initialValue)

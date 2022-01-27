@@ -286,6 +286,7 @@ function App() {
   const [deneme,setDeneme]= useState([])
   const [sortPrices,setSortPrices] = useState(0)
   const [total,setTotal] =useState([])
+  const [filteredApi,setFilteredApi] = useState(INITIAL_STATE)
 
   const addToCard = (item) => {
     const checkCard = selectBasketCount.filter((e)=> e.id === item.id).length === 0
@@ -306,89 +307,57 @@ function App() {
       })
       setSelectBasketCount(c)
       setBasketCount(basketCount+1)
+      setBasketTrue(basketTrue ? basketTrue : !basketTrue)
+
     }
   }
-
-
-
 
 
   useEffect(()=>{
     const initialValue = 0
     const toplam =  selectBasketCount.reduce((previousValue,currentValue)=>previousValue +(currentValue.amount* currentValue.price),initialValue)
-    console.log(toplam)
     setTotal([toplam])
   },[selectBasketCount])
 
 
 
   const minusIcon = (item) => {
-
       const c = selectBasketCount.map((a)=> {
         if(a.id === item.id && a.amount >1){
           a.amount--
           setBasketCount(basketCount-1)
-
         }
         return a
       })
-
-
-
       setSelectBasketCount(c)
-
-
-
   }
 
   const basketDeleted = (item)=>{
     const newBasket = selectBasketCount.filter((e)=> item.id !== e.id)
     setSelectBasketCount(newBasket)
-    setBasketCount( selectBasketCount?.filter((e)=> e.id !== item.id).length)
+    setBasketCount( basketCount - item.amount)
   }
 
   const orderBy = (secim) => {
     if(secim == "Lowest to highest"){
-     const temp = api.sort((a,b) => a.price-b.price)
-      setApi(temp)
+     const temp = filteredApi.sort((a,b) => a.price-b.price)
+      setFilteredApi(temp)
       setSortPrices(sortPrices+1)
     }
     if(secim == "Highest to lowest"){
-      const temp = api.sort((a,b) => b.price-a.price)
-      setApi(temp)
+      const temp = filteredApi.sort((a,b) => b.price-a.price)
+      setFilteredApi(temp)
       setSortPrices(sortPrices+1)
     }
   }
 
-const sizes = (beden) => {
-  if(beden == "XS"){
-    const seciliBeden = api.filter((a)=>{
-      console.log(a.availableSizes.indexOf("XS")  )
-    })
+  const sizes = (beden) => {
+  const seciliBeden = api.filter((a)=>a.availableSizes.filter((z)=>z == beden).length >0 )
+  setFilteredApi(seciliBeden)
+}
 
-  }
-    if(beden == "S"){
-      const seciliBeden = api.filter((a)=>a.availableSizes == beden)
-      setApi(seciliBeden)
-    }
-  if(beden == "M"){
-    const seciliBeden = api.filter((a)=>a.availableSizes == beden)
-    setApi(seciliBeden)
-  }
-  if(beden == "L"){
-    const seciliBeden = api.filter((a)=>a.availableSizes == beden)
-    setApi(seciliBeden)
-  }
-  if(beden == "XL"){
-    const seciliBeden = api.filter((a)=>a.availableSizes == beden)
-    setApi(seciliBeden)
-  }
-  if(beden == "XXL"){
-    const seciliBeden = api.filter((a)=>a.availableSizes == beden)
-    setApi(seciliBeden)
-  }else{
-    api.map()
-  }
+  const clearFilter = ()=> {
+    setFilteredApi(api)
 }
 
   return (
@@ -396,14 +365,14 @@ const sizes = (beden) => {
     <div className={"container allPage"}>
         <Navbar basketTrue={basketTrue} setBasketTrue={setBasketTrue} basketCount={basketCount}/>
         <div className={"row"}>
-          <div className={"col-2"}>
-              <Sizes sizes={sizes} orderBy={orderBy}/>
+          <div  className={"mb-lg-4"}>
+              <Sizes clearFilter={clearFilter} sizes={sizes} orderBy={orderBy}/>
             {sortPrices? "" : ""}
           </div>
-            <div className={"col-9"}>
-                <Card addToCard={addToCard}  api={api}/>
+            <div className={basketTrue ? "col-8" : "col-10"}>
+                <Card addToCard={addToCard}  api={filteredApi}/>
             </div>
-          <div className={"col-1"}>
+          <div className={"col-4"}>
                 <Basket  total={total}  minusIcon={minusIcon} addToCard={addToCard} deneme={deneme} setDeneme={setDeneme} basketDeleted={basketDeleted} setSelectBasketCount={setSelectBasketCount} basketTrue={basketTrue} setBasketTrue={setBasketTrue} selectBasketCount={selectBasketCount} api={api} setBasketCount={setBasketCount} basketCount={basketCount}/>
           </div>
         </div>

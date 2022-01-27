@@ -1,4 +1,5 @@
 import React from 'react';
+import Basket from "./Basket";
 
 function Navbar({basketCount,basketTrue,setBasketTrue}) {
 

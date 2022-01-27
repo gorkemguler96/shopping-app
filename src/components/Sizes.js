@@ -1,24 +1,25 @@
 
-function Sizes({orderBy,sizes}) {
+function Sizes({orderBy,sizes,clearFilter}) {
 
-
+const arr = ["XS","S","M","L","XL","XXL"]
 
     return (
         <div className={"row"}>
-            <div>
+            <div className={"sizes-card"}>
             <h6 className={"baslik-sizes"}>Sizes:</h6>
             <div  className={"sizes"}>
-                <button onClick={()=>sizes("XS")} type="button" className="btn size frst btn-info">XS</button>
-                <button onClick={()=>sizes("S")} type="button" className="btn size btn-info">S</button>
-                <button onClick={()=>sizes("M")} type="button" className="btn size btn-info">M</button>
-                <button onClick={()=>sizes("L")} type="button" className="btn size btn-info">L</button>
-                <button onClick={()=>sizes("XL")} type="button" className="btn size btn-info">XL</button>
-                <button onClick={()=>sizes("XXL")} type="button" className="btn size son btn-info">XXL</button>
+                {arr.map((button)=>{
+                    return(
+                        <button onClick={()=>sizes(button)} type="button" className="btn size frst btn-info">{button}</button>
+                    )
+                })}
+                <button onClick={()=>clearFilter()} type="button" className="btn clear frst btn-info">Clear Filter</button>
+
             </div>
             </div>
 
             <div className="dropdown">
-                <button className="btn dropdown-toggle" type="button" id="dropdownMenuButton"
+                <button className="btn orderStyle dropdown-toggle" type="button" id="dropdownMenuButton"
                         data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                     Order by
                 </button>

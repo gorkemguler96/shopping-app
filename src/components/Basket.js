@@ -1,7 +1,8 @@
 import React from 'react';
 import { MinusSquareOutlined, PlusSquareOutlined, CloseSquareOutlined} from '@ant-design/icons';
+import {findAllByDisplayValue} from "@testing-library/react";
 
-function Basket({basketCount, api, selectBasketCount,setBasketTrue,basketTrue,basketDeleted,addToCard,minusIcon,total,toplam}) {
+function Basket({basketCount, selectBasketCount,setBasketTrue,basketTrue,basketDeleted,addToCard,minusIcon,total}) {
     return (
         <div className={"basketZindex"}>
             {basketTrue ? (
@@ -19,7 +20,8 @@ function Basket({basketCount, api, selectBasketCount,setBasketTrue,basketTrue,ba
                             {selectBasketCount.map((i,index) => {
 
                                     return (
-                                        <div >
+
+                                        <div className={"scrollbar"}>
                                             <div key={i.id} className="card mb-3 bordr-bottom basket-item">
                                                 <div className="row no-gutters">
                                                     <div className="col-md-4">

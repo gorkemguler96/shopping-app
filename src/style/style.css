@@ -209,7 +209,22 @@
     margin-bottom: 6px;
 }
 
+.scrollbar {
+    overflow-y: scroll;
+    height: 340px;
+}
 
-
+.scrollbar::-webkit-scrollbar {
+    background: #eabf00;
+    width: 4px;
+    background: black;
+}
+.scrollbar::-webkit-scrollbar-corner{
+    background: transparent;
+}
+.scrollbar::-webkit-scrollbar-thumb{
+    border-radius: 50px;
+    background: #eabf00;
+}
 
 

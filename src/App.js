@@ -312,14 +312,11 @@ function App() {
     }
   }
 
-
   useEffect(()=>{
     const initialValue = 0
     const toplam =  selectBasketCount.reduce((previousValue,currentValue)=>previousValue +(currentValue.amount* currentValue.price),initialValue)
     setTotal([toplam])
   },[selectBasketCount])
-
-
 
   const minusIcon = (item) => {
       const c = selectBasketCount.map((a)=> {
@@ -360,6 +357,18 @@ function App() {
     setFilteredApi(api)
 }
 
+const completed= ()=>{
+    if(selectBasketCount.length >0){
+      alert("The payment is complete.Have a nice day :)")
+      setSelectBasketCount([])
+      setBasketCount(0)
+      setBasketTrue(false)
+    }else {
+      alert("Please add too card")
+    }
+
+  }
+
   return (
 
     <div className={"container allPage"}>
@@ -373,7 +382,7 @@ function App() {
                 <Card addToCard={addToCard}  api={filteredApi}/>
             </div>
           <div className={"col-4"}>
-                <Basket  total={total}  minusIcon={minusIcon} addToCard={addToCard} deneme={deneme} setDeneme={setDeneme} basketDeleted={basketDeleted} setSelectBasketCount={setSelectBasketCount} basketTrue={basketTrue} setBasketTrue={setBasketTrue} selectBasketCount={selectBasketCount} api={api} setBasketCount={setBasketCount} basketCount={basketCount}/>
+                <Basket completed={completed}  total={total}  minusIcon={minusIcon} addToCard={addToCard} deneme={deneme} setDeneme={setDeneme} basketDeleted={basketDeleted} setSelectBasketCount={setSelectBasketCount} basketTrue={basketTrue} setBasketTrue={setBasketTrue} selectBasketCount={selectBasketCount} api={api} setBasketCount={setBasketCount} basketCount={basketCount}/>
           </div>
         </div>
 

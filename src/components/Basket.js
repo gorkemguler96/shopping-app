@@ -2,7 +2,8 @@ import React from 'react';
 import { MinusSquareOutlined, PlusSquareOutlined, CloseSquareOutlined} from '@ant-design/icons';
 import {findAllByDisplayValue} from "@testing-library/react";
 
-function Basket({basketCount, selectBasketCount,setBasketTrue,basketTrue,basketDeleted,addToCard,minusIcon,total}) {
+function Basket({basketCount, selectBasketCount,setBasketTrue,basketTrue,basketDeleted,addToCard,minusIcon,total,completed})
+{
     return (
         <div className={"basketZindex"}>
             {basketTrue ? (
@@ -16,12 +17,12 @@ function Basket({basketCount, selectBasketCount,setBasketTrue,basketTrue,basketD
                             <span className={"badge badge-warning"}>{basketCount}</span>
                             <span className={"shoppingCard"}><h4>Shopping Cart</h4></span>
                         </h5>
-                        <div className="card-text">
+                        <div className="card-text scrollbar">
                             {selectBasketCount.map((i,index) => {
 
                                     return (
 
-                                        <div className={"scrollbar"}>
+                                        <div >
                                             <div key={i.id} className="card mb-3 bordr-bottom basket-item">
                                                 <div className="row no-gutters">
                                                     <div className="col-md-4">
@@ -58,7 +59,7 @@ function Basket({basketCount, selectBasketCount,setBasketTrue,basketTrue,basketD
                                                 SubTotal
                                                 <span className={"fiyat"}> $ {total ? total : total}</span>
                                             </span>
-                                            <button type="button" className="btn btn-sttng btn-dark">CheckOut</button>
+                                            <button onClick={completed} id={"bitti"} type="button" className="btn btn-sttng btn-dark">CheckOut</button>
                                         </div>
 
 

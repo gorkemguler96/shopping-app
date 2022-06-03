@@ -21,7 +21,7 @@ function App() {
     "currencyFormat": "$",
     "isFreeShipping": true,
     "quantity": 0,
-      "img": "https://react-shopping-cart-67954.firebaseapp.com/static/media/12064273040195392_1.2995d79a.jpg"},
+      "img": "https://www.madmext.com/Uploads/UrunResimleri/Thumb/madmext-erkek-renk-bloklu-siyah-tisort-2f108d.jpg"},
 
 
     {
@@ -37,7 +37,7 @@ function App() {
       "currencyFormat": "$",
       "isFreeShipping": true,
       "quantity": 0,
-      "img": "https://react-shopping-cart-67954.firebaseapp.com/static/media/51498472915966370_1.df947f14.jpg"
+      "img": "https://www.madmext.com/Uploads/UrunResimleri/buyuk/madmext-baskili-beyaz-erkek-tisort-446-cd9189.jpg"
     },
 
     {
@@ -53,7 +53,7 @@ function App() {
       "currencyFormat": "$",
       "isFreeShipping": true,
       "quantity": 0,
-      "img": "https://react-shopping-cart-67954.firebaseapp.com/static/media/10686354557628304_1.0d941b4c.jpg"
+      "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ0K1DQnmQKfP_7lY67nNIsRWrJkSIuU1jmPQ&usqp=CAU"
     },
 
     {
@@ -69,7 +69,7 @@ function App() {
       "currencyFormat": "$",
       "isFreeShipping": true,
       "quantity": 0,
-      "img": "https://react-shopping-cart-67954.firebaseapp.com/static/media/11033926921508488_1.84c82a5a.jpg"
+      "img": "https://img-lcwaikiki.mncdn.com/mnresize/1024/-/productimages/20201/2/4021510/l_20201-0sm958z8-cvl_a.jpg"
     },
 
     {
@@ -85,7 +85,7 @@ function App() {
       "currencyFormat": "$",
       "isFreeShipping": true,
       "quantity": 0,
-      "img": "https://react-shopping-cart-67954.firebaseapp.com/static/media/39876704341265610_1.a313534c.jpg"
+      "img": "https://sky-static.mavi.com/sys-master/maviTrImages/h88/hf2/9763962814494/168892-620_image_1.jpg_Default-ZoomProductImage"
     },
 
     {
@@ -101,7 +101,7 @@ function App() {
       "currencyFormat": "$",
       "isFreeShipping": true,
       "quantity": 0,
-      "img": "https://react-shopping-cart-67954.firebaseapp.com/static/media/8552515751438644_1.87b5353e.jpg"
+      "img": "https://images.farktorcdn.com/img/800x1200/Library/Upl/5500142/Product/8683285492160-0.jpg"
     },
 
     {
@@ -117,7 +117,7 @@ function App() {
       "currencyFormat": "$",
       "isFreeShipping": true,
       "quantity": 0,
-      "img": "https://react-shopping-cart-67954.firebaseapp.com/static/media/18644119330491310_1.75f51cec.jpg"
+      "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRCL68W_GoogW2lZFsXIQf3TjL26BRu1OCXHA&usqp=CAU"
     },
 
     {
@@ -133,7 +133,7 @@ function App() {
       "currencyFormat": "$",
       "isFreeShipping": true,
       "quantity": 0,
-      "img": "https://react-shopping-cart-67954.firebaseapp.com/static/media/11854078013954528_1.7faf6a31.jpg"
+      "img": "https://statics.altinyildizclassics.com/mnresize/900/1234/productimages/4A4820200047_BYZ_1.jpg"
     },
 
     {
@@ -149,7 +149,7 @@ function App() {
       "currencyFormat": "$",
       "isFreeShipping": true,
       "quantity": 0,
-      "img": "https://react-shopping-cart-67954.firebaseapp.com/static/media/876661122392077_1.df97d7c2.jpg"
+      "img": "https://floimages.mncdn.com/mnpadding/600/900/FFFFFF/media/catalog/product/22-03/21/101079358_m1-1647867707.JPG?w=600"
     },
 
     {
@@ -165,7 +165,7 @@ function App() {
       "currencyFormat": "$",
       "isFreeShipping": true,
       "quantity": 0,
-      "img": "https://react-shopping-cart-67954.firebaseapp.com/static/media/9197907543445676_1.59b64365.jpg"
+      "img": "https://dfcdn.defacto.com.tr/7/L2638AZ_19SP_WT52_01_01.jpg"
     },
 
     {
@@ -181,7 +181,7 @@ function App() {
       "currencyFormat": "$",
       "isFreeShipping": false,
       "quantity": 0,
-      "img": "https://react-shopping-cart-67954.firebaseapp.com/static/media/10547961582846888_1.54fbf816.jpg"
+      "img": "https://sky-static.mavi.com/sys-master/maviTrImages/hc9/h9d/9723349860382/1610630-70738_image_1.jpg_Default-MainProductImage"
     },
 
     {
@@ -197,7 +197,7 @@ function App() {
       "currencyFormat": "$",
       "isFreeShipping": false,
       "quantity": 0,
-      "img": "https://react-shopping-cart-67954.firebaseapp.com/static/media/6090484789343891_1.45a051e0.jpg"
+      "img": "https://img-lcwaikiki.mncdn.com/mnresize/1024/-/pim/productimages/20212/5513747/l_20212-w1i267z8-kg1_a.jpg"
     },
 
     {
@@ -213,7 +213,7 @@ function App() {
       "currencyFormat": "$",
       "isFreeShipping": true,
       "quantity": 0,
-      "img": "https://react-shopping-cart-67954.firebaseapp.com/static/media/18532669286405344_1.d78e2790.jpg"
+      "img": "https://dfcdn.defacto.com.tr/7/M4789AZ_20SP_GN512_01_01.jpg"
     },
 
     {
@@ -229,7 +229,7 @@ function App() {
       "currencyFormat": "$",
       "isFreeShipping": true,
       "quantity": 0,
-      "img": "https://react-shopping-cart-67954.firebaseapp.com/static/media/5619496040738316_1.843a4713.jpg"
+      "img": "https://deepsea.com.tr/148226-thickbox_default/deepsea-v-yakali-likrali-dar-kesim-erkek-tisort-1801165.jpg"
     },
 
     {
@@ -245,7 +245,7 @@ function App() {
       "currencyFormat": "$",
       "isFreeShipping": false,
       "quantity": 0,
-      "img": "https://react-shopping-cart-67954.firebaseapp.com/static/media/5619496040738316_1.843a4713.jpg"
+      "img": "https://aydinli-polo.b-cdn.net/products/2020/06/12/450820/c8d6df6d-07e8-4759-aef0-4759eb7f6534_size1400x1400_quality100.jpg"
     },
 
     {
@@ -261,7 +261,7 @@ function App() {
       "currencyFormat": "$",
       "isFreeShipping": true,
       "quantity": 0,
-      "img": "https://react-shopping-cart-67954.firebaseapp.com/static/media/11600983276356164_1.06ec2c62.jpg"
+      "img": "https://www.gotham.com.tr/Uploads/UrunResimleri/buyuk/kadin-kisa-shadow-panda-sari-t-shirt-258-53.jpg"
     },
 
     {
@@ -277,7 +277,7 @@ function App() {
       "currencyFormat": "$",
       "isFreeShipping": true,
       "quantity": 0,
-      "img": "https://react-shopping-cart-67954.firebaseapp.com/static/media/27250082398145996_1.4c799bac.jpg"
+      "img": "https://cdn.sorsware.com/oxxo/ContentImages/Product/22y/22YOX-CUPTOPVE3/soft-touch-v-yaka-tisort--modal-_silver-mink-gri_1_detay.jpg"
     }]
   const [api,setApi] = useState(INITIAL_STATE)
   const [basketCount,setBasketCount] = useState(0)

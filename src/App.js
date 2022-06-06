@@ -382,7 +382,22 @@ const completed= ()=>{
                 <Card addToCard={addToCard}  api={filteredApi}/>
             </div>
           <div className={"col-4"}>
-                <Basket completed={completed}  total={total}  minusIcon={minusIcon} addToCard={addToCard} deneme={deneme} setDeneme={setDeneme} basketDeleted={basketDeleted} setSelectBasketCount={setSelectBasketCount} basketTrue={basketTrue} setBasketTrue={setBasketTrue} selectBasketCount={selectBasketCount} api={api} setBasketCount={setBasketCount} basketCount={basketCount}/>
+                <Basket 
+                completed={completed}  
+                total={total}  
+                minusIcon={minusIcon} 
+                addToCard={addToCard} 
+                deneme={deneme} 
+                setDeneme={setDeneme} 
+                basketDeleted={basketDeleted} 
+                setSelectBasketCount={setSelectBasketCount} 
+                basketTrue={basketTrue} 
+                setBasketTrue={setBasketTrue} 
+                selectBasketCount={selectBasketCount} 
+                api={api} 
+                setBasketCount={setBasketCount} 
+                basketCount={basketCount}
+                />
           </div>
         </div>
 
